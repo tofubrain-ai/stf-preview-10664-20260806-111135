@@ -1,0 +1,128 @@
+{
+  "workflow": {
+    "stage": "backend-dev-written",
+    "requiresHumanApprovalBeforeProd": true,
+    "ticket": "fake-item-drive-a",
+    "notes": "backend-dev 已建立 fake item；正式站仍需人類確認"
+  },
+  "backend": {
+    "devBaseUrl": "https://backend-dev.sleepytofu.com",
+    "prodBaseUrl": "https://backend.sleepytofu.com",
+    "devItemEditUrl": "https://backend-dev.sleepytofu.com/items/edit/10667",
+    "prodItemEditUrl": null
+  },
+  "frontend": {
+    "devBaseUrl": "https://www-dev.sleepytofu.com",
+    "prodBaseUrl": "https://www.sleepytofu.com",
+    "devProductUrl": "https://www-dev.sleepytofu.com/product/145?item_id=10667",
+    "prodProductUrl": null
+  },
+  "item": {
+    "itemId": 10667,
+    "itemName": "【測試勿下單】Drive 假商品 A｜測試品項 A",
+    "sort": 777,
+    "productId": 145,
+    "productName": "【測試勿下單】Drive 假商品 A",
+    "specifications": [
+      {
+        "name": "款式",
+        "value": "眠豆腐邊框版",
+        "optionId": 263
+      },
+      {
+        "name": "尺寸",
+        "value": "單人加大",
+        "optionId": 2
+      }
+    ],
+    "inventoryList": [
+      {
+        "inventoryLabel": "新三尺半邊框",
+        "inventoryId": 2879,
+        "quantity": 1
+      },
+      {
+        "inventoryLabel": "眠豆腐說明書",
+        "inventoryId": 1454,
+        "quantity": 1
+      }
+    ],
+    "prices": {
+      "priceOriginal": 12345,
+      "priceSelling": 9876,
+      "priceCost": null,
+      "priceAddon": 9876
+    },
+    "visibility": {
+      "itemStatus": "up",
+      "isDisplay": "show",
+      "dateS": "2026-08-06 00:00:00",
+      "dateE": "2099-12-31 23:59:00"
+    },
+    "images": {
+      "feedImage": {
+        "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 21.jpg",
+        "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/21.jpg",
+        "expectedFileName": "21.jpg"
+      },
+      "itemImages": [
+        {
+          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 1.jpg",
+          "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/1.jpg",
+          "expectedFileName": "1.jpg"
+        },
+        {
+          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 10.jpg",
+          "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/10.jpg",
+          "expectedFileName": "10.jpg"
+        },
+        {
+          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 21.jpg",
+          "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/21.jpg",
+          "expectedFileName": "21.jpg"
+        }
+      ]
+    },
+    "relations": {
+      "isRelation": 0,
+      "relationProductList": [],
+      "isAlso": 0,
+      "alsoProductList": []
+    },
+    "summary": "<p>【測試勿下單】這是使用既有 Google Drive 圖片建立的假商品測試品項。</p><p>款式：眠豆腐邊框版｜尺寸：單人加大</p>",
+    "seo": {
+      "metaTitle": "",
+      "metaKeywords": "",
+      "metaDescription": ""
+    },
+    "purchase": {
+      "buyUnlimited": 1,
+      "buyLimit": 0
+    },
+    "dimensions": {
+      "itemLength": null,
+      "itemWidth": null,
+      "itemHeight": null,
+      "itemWeight": null
+    },
+    "shipping": {
+      "outerIsland": 0,
+      "shippingFee1": 0,
+      "shippingFee2": 0
+    },
+    "arrivalNotification": 1,
+    "extraList": []
+  },
+  "preview": {
+    "compareAgainstProdItemId": 7605,
+    "compareAgainstProdUrl": "https://www.sleepytofu.com/product/1?item_id=7605",
+    "reviewChecklist": [
+      "www-dev 商品頁能開",
+      "款式/尺寸正確",
+      "價格顯示 9876",
+      "主圖與 feed 圖正確",
+      "此品項名稱含測試勿下單",
+      "未經人類確認不可推正式站"
+    ]
+  }
+}
