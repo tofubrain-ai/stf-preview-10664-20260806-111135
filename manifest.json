@@ -84,28 +84,34 @@
       ]
     },
     "relations": {
-      "relatedProducts": [
-        "眠豆腐保潔墊｜測試關聯 A",
-        "眠豆腐床包組｜測試關聯 B",
-        "眠豆腐枕頭｜測試關聯 C",
-        "眠豆腐床邊桌｜測試關聯 D"
-      ],
-      "alsoProducts": [
-        "床架安裝服務｜測試加購 A",
-        "舊床回收服務｜測試加購 B",
-        "延長保固方案｜測試加購 C"
-      ]
+      "isRelation": 0,
+      "relationProductList": [],
+      "isAlso": 0,
+      "alsoProductList": []
     },
-    "extras": [
-      "到府搬運｜測試附加項目",
-      "指定時段配送｜測試附加項目"
-    ],
     "summary": "<p>【測試勿下單】這是 manifest preview 測試品項。</p><p>款式：眠豆腐邊框版｜尺寸：單人加大</p>",
     "seo": {
       "metaTitle": "",
       "metaKeywords": "",
       "metaDescription": ""
-    }
+    },
+    "purchase": {
+      "buyUnlimited": 1,
+      "buyLimit": 0
+    },
+    "dimensions": {
+      "itemLength": null,
+      "itemWidth": null,
+      "itemHeight": null,
+      "itemWeight": null
+    },
+    "shipping": {
+      "outerIsland": 0,
+      "shippingFee1": 0,
+      "shippingFee2": 0
+    },
+    "arrivalNotification": 1,
+    "extraList": []
   },
   "preview": {
     "compareAgainstProdItemId": 7605,
