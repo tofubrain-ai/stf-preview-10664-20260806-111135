@@ -9,7 +9,6 @@
     * { box-sizing:border-box; }
     body { margin:0; font:15px/1.6 -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); }
     a { color:var(--accent); }
-    code { background:#0f172a; padding:2px 6px; border-radius:6px; }
     .wrap { max-width:1200px; margin:0 auto; padding:24px; }
     .hero { display:grid; grid-template-columns:2fr 1fr; gap:16px; margin-bottom:16px; }
     .card { background:var(--panel); border:1px solid #26324e; border-radius:16px; padding:18px; box-shadow:0 8px 30px rgba(0,0,0,.18); }
@@ -22,26 +21,25 @@
     table { width:100%; border-collapse:collapse; }
     th,td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid #27324d; }
     th { width:170px; color:var(--muted); font-weight:600; }
-    .image-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,max-content)); gap:16px; align-items:start; }
-    .feed-grid { display:grid; grid-template-columns:minmax(220px,420px); gap:16px; }
-    .image-card { width:fit-content; max-width:100%; }
-    .image-card img { display:block; width:auto; max-width:100%; height:auto; max-height:320px; border-radius:12px; background:#0f172a; }
-    .feed-card img { max-height:240px; }
-    .summary { background:#0d1424; border-radius:12px; padding:14px; }
     ul { margin:8px 0 0 18px; }
+    .summary { background:#0d1424; border-radius:12px; padding:14px; }
     .mono { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
-    pre { white-space:pre-wrap; overflow-wrap:anywhere; margin:0; }
-    @media (max-width: 900px) { .hero, .grid { grid-template-columns:1fr; } }
+    .feed-grid { display:grid; grid-template-columns:minmax(220px,420px); gap:16px; }
+    .image-group { margin-top:18px; padding-top:12px; border-top:1px solid #27324d; }
+    .image-group:first-of-type { border-top:none; padding-top:0; }
+    .image-group h3 { margin-bottom:12px; color:var(--accent); }
+    .image-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,max-content)); gap:16px; align-items:start; }
+    .image-card { width:fit-content; max-width:100%; }
+    .image-card img { display:block; width:auto; max-width:100%; height:auto; border-radius:12px; background:#0f172a; }
+    .image-card figcaption { margin-top:10px; color:var(--muted); }
+    @media (max-width: 900px) { .hero, .grid { grid-template-columns:1fr; } .feed-grid { grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
       <div class="card">
-        <div>
-          <span class="badge ok">階段：backend-dev-written</span>
-          <span class="badge warn">正式站限制：需人工確認</span>
-        </div>
+        <div><span class="badge ok">階段：backend-dev-written</span><span class="badge warn">正式站限制：需人工確認</span></div>
         <h1>【測試勿下單】Manifest Preview 測試床墊 A</h1>
         <p class="meta">單號：<span class="mono">manifest-lab-10664</span></p>
         <p class="meta">備註：backend-dev 已建立完成；僅可在人類確認後推正式站</p>
@@ -55,91 +53,63 @@
         </ul>
       </div>
     </section>
-
     <section class="grid">
-      <div class="card">
-        <h2>基本資料</h2>
-        <table><tr><th>itemId</th><td>10664</td></tr><tr><th>productId</th><td>1</td></tr><tr><th>商品名稱</th><td>眠豆腐</td></tr><tr><th>排序</th><td>777</td></tr><tr><th>itemStatus</th><td>up</td></tr><tr><th>isDisplay</th><td>show</td></tr><tr><th>dateS</th><td>2026-08-06 00:00:00</td></tr><tr><th>dateE</th><td>2099-12-31 23:59:00</td></tr></table>
-      </div>
-      <div class="card">
-        <h2>價格</h2>
-        <table><tr><th>priceOriginal</th><td>12345</td></tr><tr><th>priceSelling</th><td>9876</td></tr><tr><th>priceCost</th><td></td></tr><tr><th>priceAddon</th><td>9876</td></tr></table>
-      </div>
+      <div class="card"><h2>基本資料</h2><table><tr><th>itemId</th><td>10664</td></tr><tr><th>productId</th><td>1</td></tr><tr><th>商品名稱</th><td>眠豆腐</td></tr><tr><th>排序</th><td>777</td></tr><tr><th>itemStatus</th><td>up</td></tr><tr><th>isDisplay</th><td>show</td></tr><tr><th>dateS</th><td>2026-08-06 00:00:00</td></tr><tr><th>dateE</th><td>2099-12-31 23:59:00</td></tr></table></div>
+      <div class="card"><h2>價格</h2><table><tr><th>priceOriginal</th><td>12345</td></tr><tr><th>priceSelling</th><td>9876</td></tr><tr><th>priceCost</th><td></td></tr><tr><th>priceAddon</th><td>9876</td></tr></table></div>
     </section>
-
     <section class="grid">
-      <div class="card">
-        <h2>規格</h2>
-        <table><thead><tr><th>名稱</th><th>值</th><th>optionId</th></tr></thead><tbody><tr><td>款式</td><td>眠豆腐邊框版</td><td>263</td></tr><tr><td>尺寸</td><td>單人加大</td><td>2</td></tr></tbody></table>
-      </div>
-      <div class="card">
-        <h2>庫存／組成</h2>
-        <table><thead><tr><th>SKU 標籤</th><th>inventoryId</th><th>數量</th></tr></thead><tbody><tr><td>新三尺半邊框</td><td>2879</td><td>1</td></tr><tr><td>眠豆腐說明書</td><td>1454</td><td>1</td></tr></tbody></table>
-      </div>
+      <div class="card"><h2>規格</h2><table><thead><tr><th>名稱</th><th>值</th><th>optionId</th></tr></thead><tbody><tr><td>款式</td><td>眠豆腐邊框版</td><td>263</td></tr><tr><td>尺寸</td><td>單人加大</td><td>2</td></tr></tbody></table></div>
+      <div class="card"><h2>庫存／組成</h2><table><thead><tr><th>SKU 標籤</th><th>inventoryId</th><th>數量</th></tr></thead><tbody><tr><td>新三尺半邊框</td><td>2879</td><td>1</td></tr><tr><td>眠豆腐說明書</td><td>1454</td><td>1</td></tr></tbody></table></div>
     </section>
-
     <section class="grid">
-      <div class="card">
-        <h2>檢查清單</h2>
-        <ul><li>www-dev 商品頁能開</li><li>款式/尺寸正確</li><li>價格顯示 9876</li><li>主圖與 feed 圖正確</li><li>此品項名稱含測試勿下單</li><li>未經人類確認不可推正式站</li></ul>
-      </div>
-      <div class="card">
-        <h2>相關商品／加購</h2>
-        <table><tr><th>relatedProducts</th><td>眠豆腐保潔墊｜測試關聯 A、眠豆腐床包組｜測試關聯 B、眠豆腐枕頭｜測試關聯 C、眠豆腐床邊桌｜測試關聯 D</td></tr><tr><th>alsoProducts</th><td>床架安裝服務｜測試加購 A、舊床回收服務｜測試加購 B、延長保固方案｜測試加購 C</td></tr><tr><th>extras</th><td>到府搬運｜測試附加項目、指定時段配送｜測試附加項目</td></tr><tr><th>compareAgainstProdItemId</th><td>7605</td></tr></table>
-      </div>
+      <div class="card"><h2>檢查清單</h2><ul><li>www-dev 商品頁能開</li><li>款式/尺寸正確</li><li>價格顯示 9876</li><li>主圖與 feed 圖正確</li><li>此品項名稱含測試勿下單</li><li>未經人類確認不可推正式站</li></ul></div>
+      <div class="card"><h2>相關商品／加購</h2><table><tr><th>relatedProducts</th><td>眠豆腐保潔墊｜測試關聯 A、眠豆腐床包組｜測試關聯 B、眠豆腐枕頭｜測試關聯 C、眠豆腐床邊桌｜測試關聯 D</td></tr><tr><th>alsoProducts</th><td>床架安裝服務｜測試加購 A、舊床回收服務｜測試加購 B、延長保固方案｜測試加購 C</td></tr><tr><th>extras</th><td>到府搬運｜測試附加項目、指定時段配送｜測試附加項目</td></tr><tr><th>compareAgainstProdItemId</th><td>7605</td></tr></table></div>
     </section>
-
-    <section class="card">
-      <h2>摘要</h2>
-      <div class="summary"><p>【測試勿下單】這是 manifest preview 測試品項。</p><p>款式：眠豆腐邊框版｜尺寸：單人加大</p></div>
-    </section>
-
-    <section class="card" style="margin-top:16px;">
-      <h2>Feed 圖</h2>
-      <div class="feed-grid">
-    <figure class="card image-card feed-card">
-      <img src="images/21.jpg" alt="feed image" />
+    <section class="card"><h2>摘要</h2><div class="summary"><p>【測試勿下單】這是 manifest preview 測試品項。</p><p>款式：眠豆腐邊框版｜尺寸：單人加大</p></div></section>
+    <section class="card" style="margin-top:16px;"><h2>Feed 圖</h2><div class="feed-grid"><figure class="card image-card">
+      <img src="images/21.jpg" alt="21.jpg" style="max-height:220px;" />
       <figcaption>
         <div><strong>檔名：</strong> 21.jpg</div>
         <div><strong>來源：</strong> Google Drive folder / 21.jpg</div>
       </figcaption>
-    </figure>
-    </div>
-    </section>
-
-    <section class="card" style="margin-top:16px;">
-      <h2>Item 圖</h2>
-      <div class="image-grid">
-    <figure class="card image-card">
-      <img src="images/1.jpg" alt="1.jpg" />
+    </figure></div></section>
+    <section class="card" style="margin-top:16px;"><h2>Item 圖</h2><section class="image-group"><h3>主圖</h3><div class="image-grid"><figure class="card image-card">
+      <img src="images/1.jpg" alt="1.jpg" style="max-height:360px;" />
       <figcaption>
-        <div><strong>角色：</strong> main</div>
         <div><strong>檔名：</strong> 1.jpg</div>
         <div><strong>來源：</strong> Google Drive folder / 1.jpg</div>
       </figcaption>
-    </figure>
-    
-    <figure class="card image-card">
-      <img src="images/10.jpg" alt="10.jpg" />
+    </figure></div></section><section class="image-group"><h3>情境圖</h3><div class="image-grid"><figure class="card image-card">
+      <img src="images/10.jpg" alt="10.jpg" style="max-height:320px;" />
       <figcaption>
-        <div><strong>角色：</strong> gallery</div>
         <div><strong>檔名：</strong> 10.jpg</div>
         <div><strong>來源：</strong> Google Drive folder / 10.jpg</div>
       </figcaption>
-    </figure>
-    
-    <figure class="card image-card">
-      <img src="images/21.jpg" alt="21.jpg" />
+    </figure><figure class="card image-card">
+      <img src="images/21.jpg" alt="21.jpg" style="max-height:320px;" />
       <figcaption>
-        <div><strong>角色：</strong> gallery</div>
         <div><strong>檔名：</strong> 21.jpg</div>
         <div><strong>來源：</strong> Google Drive folder / 21.jpg</div>
       </figcaption>
-    </figure>
-    </div>
-    </section>
-
-    
+    </figure></div></section><section class="image-group"><h3>品相圖</h3><div class="image-grid"><figure class="card image-card">
+      <img src="images/1.jpg" alt="1.jpg" style="max-height:320px;" />
+      <figcaption>
+        <div><strong>檔名：</strong> 1.jpg</div>
+        <div><strong>來源：</strong> Google Drive folder / 1.jpg</div>
+      </figcaption>
+    </figure><figure class="card image-card">
+      <img src="images/10.jpg" alt="10.jpg" style="max-height:320px;" />
+      <figcaption>
+        <div><strong>檔名：</strong> 10.jpg</div>
+        <div><strong>來源：</strong> Google Drive folder / 10.jpg</div>
+      </figcaption>
+    </figure><figure class="card image-card">
+      <img src="images/21.jpg" alt="21.jpg" style="max-height:320px;" />
+      <figcaption>
+        <div><strong>檔名：</strong> 21.jpg</div>
+        <div><strong>來源：</strong> Google Drive folder / 21.jpg</div>
+      </figcaption>
+    </figure></div></section></section>
   </div>
 </body>
 </html>
