@@ -1,9 +1,9 @@
 {
   "workflow": {
-    "stage": "backend-dev-written",
+    "stage": "backend-dev-readback",
     "requiresHumanApprovalBeforeProd": true,
     "ticket": "fake-item-drive-a",
-    "notes": "backend-dev 已建立 fake item；正式站仍需人類確認"
+    "notes": "依 backend-dev /items/edit/10667 最終回讀重產；正式站仍需人類確認"
   },
   "backend": {
     "devBaseUrl": "https://backend-dev.sleepytofu.com",
@@ -26,12 +26,12 @@
     "specifications": [
       {
         "name": "款式",
-        "value": "眠豆腐邊框版",
+        "value": null,
         "optionId": 263
       },
       {
         "name": "尺寸",
-        "value": "單人加大",
+        "value": null,
         "optionId": 2
       }
     ],
@@ -61,25 +61,29 @@
     },
     "images": {
       "feedImage": {
-        "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 21.jpg",
+        "source": "backend-dev readback",
         "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/21.jpg",
-        "expectedFileName": "21.jpg"
+        "expectedFileName": "21.jpg",
+        "backendUrl": "https://backend-dev.sleepytofu.com/uploads/items/667/6a74145a33a72.jpg"
       },
       "itemImages": [
         {
-          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 1.jpg",
+          "source": "backend-dev readback",
           "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/1.jpg",
-          "expectedFileName": "1.jpg"
+          "expectedFileName": "1.jpg",
+          "backendUrl": "https://static.sleepytofu.com/uploads/items/667/6a7414e9b7a05.jpg"
         },
         {
-          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 10.jpg",
+          "source": "backend-dev readback",
           "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/10.jpg",
-          "expectedFileName": "10.jpg"
+          "expectedFileName": "10.jpg",
+          "backendUrl": "https://static.sleepytofu.com/uploads/items/667/6a7414ea40e9c.jpg"
         },
         {
-          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 21.jpg",
+          "source": "backend-dev readback",
           "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/21.jpg",
-          "expectedFileName": "21.jpg"
+          "expectedFileName": "21.jpg",
+          "backendUrl": "https://static.sleepytofu.com/uploads/items/667/6a7414ea7faec.jpg"
         }
       ]
     },
@@ -89,7 +93,7 @@
       "isAlso": 0,
       "alsoProductList": []
     },
-    "summary": "<p>【測試勿下單】這是使用既有 Google Drive 圖片建立的假商品測試品項。</p><p>款式：眠豆腐邊框版｜尺寸：單人加大</p>",
+    "summary": "",
     "seo": {
       "metaTitle": "",
       "metaKeywords": "",

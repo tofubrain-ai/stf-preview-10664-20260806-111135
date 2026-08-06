@@ -1,9 +1,9 @@
 {
   "workflow": {
-    "stage": "backend-dev-written",
+    "stage": "backend-dev-readback",
     "requiresHumanApprovalBeforeProd": true,
     "ticket": "fake-product-drive-a",
-    "notes": "backend-dev 已建立 fake product；正式站仍需人類確認"
+    "notes": "依 backend-dev /products/edit/145 最終回讀重產；正式站仍需人類確認"
   },
   "backend": {
     "devBaseUrl": "https://backend-dev.sleepytofu.com",
@@ -22,7 +22,7 @@
     "productName": "【測試勿下單】Drive 假商品 A",
     "googleCategory": {
       "id": 2696,
-      "label": "家具 > 床和配件 > 床墊"
+      "label": null
     },
     "category": {
       "level1Id": 1,
@@ -57,10 +57,6 @@
     },
     "restrictionList": [
       {
-        "id": 7,
-        "name": "「眠豆腐邊框版」是什麼？"
-      },
-      {
         "id": 3,
         "name": "「眠友權益說明」床墊保固與鑑賞期"
       }
@@ -70,10 +66,11 @@
   "preview": {
     "reviewChecklist": [
       "商品名稱正確",
-      "分類正確",
+      "google 產品分類正確",
+      "主類別 / 子類別正確",
       "配送類型與配送通知正確",
-      "規格名稱正確",
-      "回收與限制事項正確",
+      "規格名稱（前台規格名稱）正確",
+      "回收 / 限制事項正確",
       "未經人類確認不可推正式站"
     ]
   }
