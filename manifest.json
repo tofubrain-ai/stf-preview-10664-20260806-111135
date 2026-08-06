@@ -69,44 +69,17 @@
         {
           "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 1.jpg",
           "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/1.jpg",
-          "expectedFileName": "1.jpg",
-          "role": "main",
-          "groupLabel": "主圖"
+          "expectedFileName": "1.jpg"
         },
         {
           "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 10.jpg",
           "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/10.jpg",
-          "expectedFileName": "10.jpg",
-          "role": "gallery",
-          "groupLabel": "情境圖"
+          "expectedFileName": "10.jpg"
         },
         {
           "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 21.jpg",
           "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/21.jpg",
-          "expectedFileName": "21.jpg",
-          "role": "gallery",
-          "groupLabel": "情境圖"
-        },
-        {
-          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 1.jpg",
-          "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/1.jpg",
-          "expectedFileName": "1.jpg",
-          "role": "variant",
-          "groupLabel": "品相圖"
-        },
-        {
-          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 10.jpg",
-          "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/10.jpg",
-          "expectedFileName": "10.jpg",
-          "role": "variant",
-          "groupLabel": "品相圖"
-        },
-        {
-          "source": "Google Drive folder 1u901AGjsxVSS_WNGGBBLE3oY3y9cwhvO / 21.jpg",
-          "localPath": "/Users/tofubrain/sleepytofu-manifest-lab/assets/processed/21.jpg",
-          "expectedFileName": "21.jpg",
-          "role": "variant",
-          "groupLabel": "品相圖"
+          "expectedFileName": "21.jpg"
         }
       ]
     },
