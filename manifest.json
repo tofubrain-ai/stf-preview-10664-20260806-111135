@@ -24,12 +24,28 @@
     "productId": 1,
     "productName": "眠豆腐",
     "specifications": [
-      {"name": "款式", "value": "眠豆腐邊框版", "optionId": 263},
-      {"name": "尺寸", "value": "單人加大", "optionId": 2}
+      {
+        "name": "款式",
+        "value": "眠豆腐邊框版",
+        "optionId": 263
+      },
+      {
+        "name": "尺寸",
+        "value": "單人加大",
+        "optionId": 2
+      }
     ],
     "inventoryList": [
-      {"inventoryLabel": "新三尺半邊框", "inventoryId": 2879, "quantity": 1},
-      {"inventoryLabel": "眠豆腐說明書", "inventoryId": 1454, "quantity": 1}
+      {
+        "inventoryLabel": "新三尺半邊框",
+        "inventoryId": 2879,
+        "quantity": 1
+      },
+      {
+        "inventoryLabel": "眠豆腐說明書",
+        "inventoryId": 1454,
+        "quantity": 1
+      }
     ],
     "prices": {
       "priceOriginal": 12345,
@@ -71,10 +87,22 @@
       ]
     },
     "relations": {
-      "relatedProducts": [],
-      "alsoProducts": []
+      "relatedProducts": [
+        "眠豆腐保潔墊｜測試關聯 A",
+        "眠豆腐床包組｜測試關聯 B",
+        "眠豆腐枕頭｜測試關聯 C",
+        "眠豆腐床邊桌｜測試關聯 D"
+      ],
+      "alsoProducts": [
+        "床架安裝服務｜測試加購 A",
+        "舊床回收服務｜測試加購 B",
+        "延長保固方案｜測試加購 C"
+      ]
     },
-    "extras": [],
+    "extras": [
+      "到府搬運｜測試附加項目",
+      "指定時段配送｜測試附加項目"
+    ],
     "summary": "<p>【測試勿下單】這是 manifest preview 測試品項。</p><p>款式：眠豆腐邊框版｜尺寸：單人加大</p>",
     "seo": {
       "metaTitle": "",
